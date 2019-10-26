@@ -19,15 +19,24 @@ namespace DisplayInfo
 
             Console.WriteLine("What is Your First Name");
             string firstName = Console.ReadLine();
-            Console.WriteLine($"Hello, {firstName}");
+            Console.WriteLine($"Hello, {firstName}!");
 
             Console.WriteLine("What Is Your Last Name");
             string lastName = Console.ReadLine();
-            Console.WriteLine($"Nice To Meet You {firstName} {lastName}");
+            Console.WriteLine($"Nice To Meet You {firstName} {lastName}!");
 
             Console.WriteLine("What Is Your Favorite Number?");
-            string favNum1 = Console.ReadLine();
-            Console.WriteLine($"Your Favorite Number is {favNum1}");
+            int favNum = Convert.ToInt32 (Console.ReadLine());
+            if (favNum > 10)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+            }
+            else if (favNum < 5)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+            }
+            Console.WriteLine($"Your Favorite Number is {favNum}!");
+            Console.ResetColor();
 
             Console.WriteLine("What Is Your Favorite Animal");
             string animal = Console.ReadLine();
