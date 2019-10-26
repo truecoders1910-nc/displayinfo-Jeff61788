@@ -21,9 +21,13 @@ namespace DisplayInfo
             string firstName = Console.ReadLine();
             Console.WriteLine($"Hello, {firstName}!");
 
+            Console.WriteLine();
+
             Console.WriteLine("What Is Your Last Name");
             string lastName = Console.ReadLine();
             Console.WriteLine($"Nice To Meet You {firstName} {lastName}!");
+
+            Console.WriteLine();
 
             Console.WriteLine("What Is Your Favorite Number?");
             int favNum = Convert.ToInt32 (Console.ReadLine());
@@ -36,8 +40,10 @@ namespace DisplayInfo
                 Console.ForegroundColor = ConsoleColor.Red;
             }
             Console.WriteLine($"Your Favorite Number is {favNum}!");
+
             Console.ResetColor();
 
+            Console.WriteLine();
             Console.WriteLine("What Is Your Favorite Animal");
             string animal = Console.ReadLine();
             Console.WriteLine($"Your Favorite Animal is {animal}");
